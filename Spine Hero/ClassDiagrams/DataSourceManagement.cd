@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpineHero.DataSources.DataSourceManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAagAAAAIACAAAAAAAABAIAAAACCAAAAA=</HashCode>
+      <FileName>DataSources\DataSourceManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.DataSources.AbstractDataSource" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAIAAAAAAAAAAAAAAAABAIIAAAACAAAAA=</HashCode>
+      <FileName>DataSources\AbstractDataSource.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.DataSources.IntelF200DataSource" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAEAAAAAAEAAAAAAAAAAAAAIAAAACAAAAA=</HashCode>
+      <FileName>DataSources\IntelF200DataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.DataSources.Senz3DDataSource" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAgQAAAAAAAAAIAAAAAAAICAAACAAAAA=</HashCode>
+      <FileName>DataSources\Senz3DDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.DataSources.WebCameraDataSource" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAAEAAAAAAAAAEAAAICAAACAACAA=</HashCode>
+      <FileName>DataSources\WebCameraDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SpineHero.DataSources.IDataSource">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAABAIIAAAACAAAAA=</HashCode>
+      <FileName>DataSources\IDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.DataSources.IDataSourceManager">
+    <Position X="0.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAASgAAAAAAAAAAAAAAABAIAAAAACAAAAA=</HashCode>
+      <FileName>DataSources\IDataSourceManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DataSource" />
+    </ShowAsAssociation>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

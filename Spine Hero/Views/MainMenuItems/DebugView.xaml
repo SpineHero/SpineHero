@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="SpineHero.Views.MainMenuItems.DebugView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:properties="clr-namespace:SpineHero.Properties"
+             xmlns:controls="clr-namespace:SpineHero.Views.Controls"
+             mc:Ignorable="d"
+             Background="{StaticResource BackgroundBrush}"
+             d:DesignHeight="500" d:DesignWidth="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <!--#region First column-->
+        <StackPanel Margin="15,10,5,10" Grid.Column="0">
+            <!-- Visualization: -->
+            <TextBlock Style="{StaticResource SubHeaderStyle}">Visualization:</TextBlock>
+            <Button x:Name="ShowVisualization" Content="Show" 
+                    HorizontalAlignment="Left" Margin="40,5,0,5" VerticalAlignment="Top" />
+            
+            <!-- Evaluation: -->
+            <TextBlock Style="{StaticResource SubHeaderStyle}">Evaluation:</TextBlock>
+            <Button x:Name="PublishCorrect" Content="Publish correct" 
+                    HorizontalAlignment="Left" Margin="40,5,0,5" VerticalAlignment="Top" />
+            <Button x:Name="PublishWrong" Content="Publish wrong" 
+                    HorizontalAlignment="Left" Margin="40,5,0,5" VerticalAlignment="Top" />
+            <CheckBox x:Name="Repeat" Content="Repeat" Margin="40,5,0,5" IsChecked="{Binding Repeat}" />
+
+            <!-- Calibration: -->
+            <TextBlock Style="{StaticResource SubHeaderStyle}">Calibration:</TextBlock>
+            <Button x:Name="DeleteCalibration" Content="Delete" 
+                    HorizontalAlignment="Left" Margin="40,5,0,5" VerticalAlignment="Top" />
+            
+            <!-- Analyze period: -->
+            <TextBlock Style="{StaticResource SubHeaderStyle}">Analyze period:</TextBlock>
+            <DockPanel  Margin="40,5,0,5">
+                <TextBlock Width="110">Without notification</TextBlock>
+                <controls:IntegerUpDown Step="100" Minimum="100" Maximum="10000" Width="60" MaxWidth="60"
+                                    Value="{Binding Source={x:Static properties:Settings.Default}, Path=AnalyzePeriod, Mode=TwoWay}" />
+                <TextBlock Margin="5,0,0,0">ms</TextBlock>
+            </DockPanel>
+            <DockPanel Margin="40,5,0,5">
+                <TextBlock Width="110">With notification</TextBlock>
+                <controls:IntegerUpDown Step="100" Minimum="100" Maximum="10000" Width="60" MaxWidth="60"
+                                    Value="{Binding Source={x:Static properties:Settings.Default}, Path=AnalyzePeriodWithNotification, Mode=TwoWay}" />
+                <TextBlock Margin="5,0,0,0">ms</TextBlock>
+            </DockPanel>
+        </StackPanel>
+        <!--#endregion First column-->
+        
+        <!--#region Second column-->
+        <StackPanel Margin="15,10,5,10" Grid.Column="1">
+            <!-- Database: -->
+            <TextBlock Style="{StaticResource SubHeaderStyle}">Database:</TextBlock>
+            <Button x:Name="CreateAndFillDatabase" Content="Fill randomly" 
+                    HorizontalAlignment="Left" Margin="40,5,0,5" VerticalAlignment="Top" />
+            <!-- Other: -->
+            <TextBlock Style="{StaticResource SubHeaderStyle}">Other:</TextBlock>
+            <Button x:Name="ShowCustomPopup" Content="Show Custom Popup" 
+                    HorizontalAlignment="Left" Margin="40,5,0,5" VerticalAlignment="Top" />
+        </StackPanel>
+        <!--#endregion Second column-->
+        <StackPanel Margin="5,10,15,10" Grid.Column="1"></StackPanel>
+    </Grid>
+</UserControl>

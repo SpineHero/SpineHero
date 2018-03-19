@@ -1,0 +1,89 @@
+﻿<UserControl ResxExtension.DefaultResxName="SpineHero.Views.MainMenuItems.DashboardView" Language="{UICulture}"
+             x:Class="SpineHero.Views.MainMenuItems.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:oxy="http://oxyplot.org/wpf"
+             xmlns:controls="clr-namespace:SpineHero.Views.Controls"
+             mc:Ignorable="d"
+             Background="{StaticResource BackgroundBrush}"
+			 d:DesignHeight="400" d:DesignWidth="500">
+
+    <Grid Margin="15,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--#region Actual posture -->
+        <DockPanel Grid.Row="0" Grid.Column="0">
+            <TextBlock DockPanel.Dock="Top" Style="{StaticResource SubHeaderStyle}" Text="{Resx ActualPosture}" />
+            <Grid>
+                <controls:Arc x:Name="DoughnutGraph"
+						Width="{Binding ActualHeight, RelativeSource={RelativeSource Self}}"
+						StrokeColor="{StaticResource DoughnutBrush}"
+						StartAngle="0"
+						EndPercentage="{Binding ActualSittingQuality}"
+                        ToolTip="{Binding ActualSittingQuality}"
+						StrokeThickness="7" />
+                <Image Width="100" Height="100" Source="{Binding ActualPostureImagePath}" />
+            </Grid>
+        </DockPanel>
+        <!--#endregion-->
+
+        <!--#region Sitting time-->
+        <DockPanel Grid.Row="0" Grid.Column="1">
+            <TextBlock DockPanel.Dock="Top" Style="{StaticResource SubHeaderStyle}"></TextBlock>
+            <StackPanel>
+                <Image Width="40" Height="40" Margin="10" Source="pack://application:,,,/Resources/Images/Statistics/clock.png" />
+                <TextBlock Style="{StaticResource HeaderStyle }" TextAlignment="Center" Text="{Binding SittingWithoutBreak, StringFormat=\{0:h\\:mm\\:ss\}}" />
+                <TextBlock Style="{StaticResource StatisticsTextStyle}" TextWrapping="Wrap" TextAlignment="Center" Text="{Resx SittingWithoutBreak}" />
+            </StackPanel>
+        </DockPanel>
+        <!--#endregion-->
+
+        <!--#region Recent sitting quality-->
+        <DockPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <TextBlock DockPanel.Dock="Top" Style="{StaticResource SubHeaderStyle}" Text="{Resx SittingQuality}" />
+            <oxy:PlotView x:Name="RecentSittingQualityGraph"
+						  DockPanel.Dock="Top"
+						  Background="Transparent"
+						  IsManipulationEnabled="False"
+                          Model="{Binding RecentSittingQuality.PlotModel}"
+						  Controller="{Binding RecentSittingQuality.PlotController}">
+                <!--IsLegendVisible="False"-->
+                <!--TextColor="{StaticResource TextColor}"-->
+
+                <oxy:PlotView.DefaultTrackerTemplate>
+                    <ControlTemplate>
+                        <Canvas>
+                            <Grid Canvas.Left="{Binding Position.X}" Canvas.Top="{Binding Position.Y}">
+                                <Ellipse Fill="{StaticResource BaseBrush}" Width="12" Height="12">
+                                    <Ellipse.RenderTransform>
+                                        <TranslateTransform X="-6" Y="-6" />
+                                    </Ellipse.RenderTransform>
+                                </Ellipse>
+                            </Grid>
+                            <Grid Canvas.Left="{Binding Position.X}" Canvas.Top="{Binding Position.Y}">
+                                <Border CornerRadius="0 0 0 0" BorderBrush="{StaticResource BaseBrush}"
+										BorderThickness="2" Background="{StaticResource BackgroundBrush}" Padding="1"
+										Margin="0 12 0 0">
+                                    <TextBlock Text="{Binding DataPoint.Y, StringFormat='{}{0:0} %'}" Margin="3"
+											   Foreground="{StaticResource TextBrush}"
+											   TextAlignment="Center" />
+                                </Border>
+                            </Grid>
+                        </Canvas>
+                    </ControlTemplate>
+                </oxy:PlotView.DefaultTrackerTemplate>
+            </oxy:PlotView>
+        </DockPanel>
+        <!--#endregion-->
+    </Grid>
+</UserControl>

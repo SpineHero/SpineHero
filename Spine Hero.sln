@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spine Hero", "Spine Hero\Spine Hero.csproj", "{565E21D7-E3CB-4D69-A975-948FCC76397F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spine Hero - Unit Tests", "Spine Hero - Unit Tests\Spine Hero - Unit Tests.csproj", "{AED931F0-46FF-40F5-8EC7-A9B1F91EDFCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spine Hero - Monitoring", "Spine Hero - Monitoring\Spine Hero - Monitoring.csproj", "{06DB67DB-BF0D-4D3B-B81A-D4491690ABA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spine Hero - Common", "SpineHero - Common\Spine Hero - Common.csproj", "{8D7F80A8-8D09-48ED-B7AA-3BBCF0ECA663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spine Hero - Image Viewer", "Spine Hero - Image Viewer\Spine Hero - Image Viewer.csproj", "{8F3A7C2F-115E-427C-B216-88175713F2C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spine Hero - Image Sampler", "Spine Hero - Image Sampler\Spine Hero - Image Sampler.csproj", "{259CF32D-537A-4CBD-A75C-2DE09F61362C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{565E21D7-E3CB-4D69-A975-948FCC76397F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565E21D7-E3CB-4D69-A975-948FCC76397F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565E21D7-E3CB-4D69-A975-948FCC76397F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565E21D7-E3CB-4D69-A975-948FCC76397F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AED931F0-46FF-40F5-8EC7-A9B1F91EDFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED931F0-46FF-40F5-8EC7-A9B1F91EDFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED931F0-46FF-40F5-8EC7-A9B1F91EDFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED931F0-46FF-40F5-8EC7-A9B1F91EDFCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06DB67DB-BF0D-4D3B-B81A-D4491690ABA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06DB67DB-BF0D-4D3B-B81A-D4491690ABA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06DB67DB-BF0D-4D3B-B81A-D4491690ABA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06DB67DB-BF0D-4D3B-B81A-D4491690ABA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D7F80A8-8D09-48ED-B7AA-3BBCF0ECA663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7F80A8-8D09-48ED-B7AA-3BBCF0ECA663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7F80A8-8D09-48ED-B7AA-3BBCF0ECA663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7F80A8-8D09-48ED-B7AA-3BBCF0ECA663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3A7C2F-115E-427C-B216-88175713F2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3A7C2F-115E-427C-B216-88175713F2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{259CF32D-537A-4CBD-A75C-2DE09F61362C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{259CF32D-537A-4CBD-A75C-2DE09F61362C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

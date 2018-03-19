@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpineHero.Model.Statistics.StatisticsModule">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAACAIgQAAAgAAAIAAQAAAAQQAAAIIBQAAAABAAAA=</HashCode>
+      <FileName>Model\Statistics\StatisticsModule.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LastEvaluation" />
+      <Property Name="LastPosture" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Evaluation">
+    <Position X="7" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Posture" Type="SpineHero.PostureMonitoring.Posture" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="2" />
+        <Point X="7.75" Y="1.625" />
+        <Point X="6" Y="1.625" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgBAAgAAAAAAAAIAAAAAAAAAAIAA=</HashCode>
+      <FileName>PostureMonitoring\ResultMessage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Posture" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="SpineHero.PostureMonitoring.Posture">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAQAgQAAQAAAAAAAAgAAAAIABA=</HashCode>
+      <FileName>PostureMonitoring\ResultMessage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

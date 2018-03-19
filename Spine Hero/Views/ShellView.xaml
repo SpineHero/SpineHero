@@ -1,0 +1,110 @@
+<Window ResxExtension.DefaultResxName="SpineHero.Views.Translation" Language="{UICulture}"
+        x:Class="SpineHero.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:tb="http://www.hardcodet.net/taskbar"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:cal="http://www.caliburnproject.org"
+        Title="Spine Hero" Height="500" Width="700"
+        cal:Message.Attach="[Gesture Ctrl+Q] = [CloseWindow]; [Event StateChanged] = [StateChanged($source, $eventArgs)]"
+        Style="{StaticResource WindowStyle}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--#region Header -->
+        <Border Grid.Row="0" Grid.Column="1" Padding="12,5,5,5" Background="{StaticResource BackgroundBrush}" >
+            <StackPanel>
+                <DockPanel LastChildFill="False">
+                    <Button DockPanel.Dock="Right" Margin="0" x:Name="ExitApplication">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image Width="16" Height="16" Source="pack://application:,,,/Resources/Images/Buttons/CloseWindowIcon.png" />
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button DockPanel.Dock="Right" Margin="0,0,5,0" x:Name="MinimizeWindow">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image Width="16" Height="16" Source="pack://application:,,,/Resources/Images/Buttons/MinimizeWindowIcon.png" />
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </DockPanel>
+                <DockPanel>
+                    <Image DockPanel.Dock="Right" Width="35" Height="35" Margin="0,5,0,0"
+						   Source="pack://application:,,,/Resources/Images/DefaultUserPhoto.png" />
+                    <!--<TextBlock DockPanel.Dock="Right" Style="{StaticResource UserNameStyle}">Jacob</TextBlock>-->
+                    <Button DockPanel.Dock="Right" Margin="0 0 10 0" cal:Message.Attach="[Event Click] = [Action StartStopMonitoring]">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image DockPanel.Dock="Right" Width="30" Height="30" Margin="0,0,5,0" VerticalAlignment="Center"
+                                           Source="{Binding StartStopButtonImagePath}" />
+                                    <StackPanel VerticalAlignment="Center">
+                                        <TextBlock Foreground="{StaticResource TextBrush}" Text="{Binding StartStopMonitoringButtonText}" />
+                                        <TextBlock Foreground="{StaticResource TextBrush}" Text="{Resx monitoring}"></TextBlock>
+                                    </StackPanel>
+                                </StackPanel>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button  DockPanel.Dock="Right" Margin="10 0 10 0" x:Name="Recalibrate" Height="30" Width="80"  >
+                        <TextBlock Margin="-30,0" TextAlignment="Center" Text="{Resx Recalibrate}" Width="80"/>
+                    </Button>
+                    <TextBlock DockPanel.Dock="Left" Style="{StaticResource HeaderStyle}"
+							   Text="{Binding ActiveItem.DisplayName}" />
+                </DockPanel>
+            </StackPanel>
+        </Border>
+        <!--#endregion-->
+
+        <!--#region Tabs -->
+        <StackPanel x:Name="MenuControl" Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+            <StackPanel Height="50" />
+            <RadioButton x:Name="ShowDashboard" IsChecked="True" Style="{StaticResource MenuTabItem}">
+                <TextBlock Text="{Resx Dashboard}" Style="{StaticResource MenuTabTextStyle}" />
+            </RadioButton>
+            <RadioButton x:Name="ShowStatistics" Style="{StaticResource MenuTabItem}">
+                <TextBlock Text="{Resx Statistics}" Style="{StaticResource MenuTabTextStyle}" />
+            </RadioButton>
+            <RadioButton x:Name="ShowFeedback" Style="{StaticResource MenuTabItem}">
+                <TextBlock Text="{Resx Feedback}" Style="{StaticResource MenuTabTextStyle}" />
+            </RadioButton>
+            <RadioButton x:Name="ShowSettings" Style="{StaticResource MenuTabItem}">
+                <TextBlock Text="{Resx Settings}" Style="{StaticResource MenuTabTextStyle}" />
+            </RadioButton>
+            <RadioButton x:Name="ShowDebug" Style="{StaticResource MenuTabItem}">
+                <TextBlock Text="{Resx Debug}" Style="{StaticResource MenuTabTextStyle}" />
+            </RadioButton>
+        </StackPanel>
+        <ContentControl x:Name="ActiveItem" Grid.Row="1" Grid.Column="1" />
+        <!--#endregion-->
+
+        <!--#region App logo -->
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Orientation="Vertical" Margin="0 20 0 0">
+            <Image Source="pack://application:,,,/Resources/Images/LogoInApp.png" Width="130" Height="90" />
+        </StackPanel>
+        <!--#endregion-->
+
+        <!--#region Taskbar icon-->
+        <tb:TaskbarIcon x:Name="TaskbarIcon" Visibility="Visible" IconSource="{Binding NotificationAreaIconViewModel.SelectedIcon}"
+                        ToolTipText="{Binding NotificationAreaIconViewModel.SelectedToolTipText}"
+                        cal:Message.Attach="[Event TrayLeftMouseDown] = [Action ShowWindow]">
+            <tb:TaskbarIcon.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="{Binding NotificationAreaIconViewModel.StartStopMonitoringText}" cal:Message.Attach="[Action StartStopMonitoring]" />
+                    <MenuItem Header="{Resx Exit}" cal:Message.Attach="[Action ExitApplication]" />
+                </ContextMenu>
+            </tb:TaskbarIcon.ContextMenu>
+        </tb:TaskbarIcon>
+        <!--#endregion-->
+    </Grid>
+</Window>

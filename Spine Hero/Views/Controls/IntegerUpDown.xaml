@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="SpineHero.Views.Controls.IntegerUpDown"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="20" d:DesignWidth="100"  MinHeight="20" MinWidth="50"
+             DataContext="{Binding RelativeSource={RelativeSource Self}}">
+    <UserControl.Resources>
+        <Style x:Key="DisableImageButton" TargetType="{x:Type Image}">
+            <Style.Triggers>
+                <Trigger Property="IsEnabled" Value="true">
+                    <Setter Property="Opacity" Value="1" />
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="false">
+                    <Setter Property="Opacity" Value="0.25" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <TextBox VerticalContentAlignment="Center" HorizontalAlignment="Stretch" Name="Text" Text="{Binding Value, Mode=TwoWay}"/>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" x:Name="ButtonUp" Click="Increment" Style="{StaticResource NumeriUpDownButtonStyle}" >
+                <Image Style="{StaticResource DisableImageButton}" Source="pack://application:,,,/Resources/Images/Buttons/Up.png" />
+            </Button>
+            <Button Grid.Row="1" x:Name="ButtonDown" Click="Decrement" Style="{StaticResource NumeriUpDownButtonStyle}">
+                <Image Style="{StaticResource DisableImageButton}" Source="pack://application:,,,/Resources/Images/Buttons/Down.png" />
+            </Button>
+        </Grid>
+    </Grid>
+</UserControl>

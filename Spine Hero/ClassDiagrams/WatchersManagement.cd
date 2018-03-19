@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpineHero.PostureMonitoring.Managers.ColorAndDepthWatcherManager" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>PostureMonitoring\Managers\ColorAndDepthWatcherManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Managers.ColorOrDepthWatcherManager" Collapsed="true">
+    <Position X="2.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>PostureMonitoring\Managers\ColorOrDepthWatcherManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Managers.WatcherManager" Collapsed="true">
+    <Position X="1.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAgAAAAQAAAAoAAAAAAAAAAYA=</HashCode>
+      <FileName>PostureMonitoring\Managers\WatcherManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.AverageResultMessageProcessor" Collapsed="true">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>PostureMonitoring\AverageResultMessageProcessor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Managers.PostureMonitoringManager" Collapsed="true">
+    <Position X="1.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAEAAIQAAAACACAAAAAAAAAAAAQAAQAAAACA=</HashCode>
+      <FileName>PostureMonitoring\Managers\PostureMonitoringManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="watcherManager" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SpineHero.PostureMonitoring.Managers.IWatcherManager">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAYA=</HashCode>
+      <FileName>PostureMonitoring\Managers\IWatcherManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ResultMessageProcessor" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="SpineHero.PostureMonitoring.Watchers.IWatcher" Collapsed="true">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\IWatcher.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.PostureMonitoring.Watchers.IColorImageWatcher" Collapsed="true">
+    <Position X="4.25" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\IWatcher.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.PostureMonitoring.Watchers.IDepthImageWatcher" Collapsed="true">
+    <Position X="6.25" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\IWatcher.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.PostureMonitoring.IResultMessageProcessor">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>PostureMonitoring\IResultMessageProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

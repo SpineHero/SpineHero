@@ -1,0 +1,35 @@
+﻿<Window ResxExtension.DefaultResxName="SpineHero.Views.Notifications.Notification" Language="{UICulture}"
+        x:Class="SpineHero.Views.Notifications.DimNotificationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpineHero.Views.Notifications"
+        xmlns:properties="clr-namespace:SpineHero.Properties"
+        mc:Ignorable="d"
+        WindowStyle="None"
+		ShowInTaskbar="False"
+		ShowActivated="False"
+		Topmost="True"
+		AllowsTransparency="True"
+		Background="Transparent"
+        Left="{Binding PositionLeft}"
+        Top="{Binding PositionTop, Mode=TwoWay}"
+        Width="{Binding Width}"
+        Height="{Binding Height, Mode=TwoWay}"
+        Title="DimNotificationView">
+    <Grid x:Name="WindowGrid" Opacity="0">
+        <Rectangle>
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#00000000" Offset="0.3" />
+                    <GradientStop Color="Black" Offset="1" />
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <!--<TextBlock Foreground="White" Margin="5 0 0 0" FontSize="20" Text="{Binding Path=Hotkey.Shortcut, StringFormat={Resx PressKey}}" />-->
+        <TextBlock Foreground="White" Margin="5 0 0 0" FontSize="20" Text="{Resx PressKey}" />
+        <TextBlock Foreground="White" Margin="150,0,0,0" FontSize="20" Text="{Binding Path=Hotkey.Shortcut}" />
+        <TextBlock Foreground="White" Margin="5 20 0 0" FontSize="30" Text="{Resx WrongPosture}" />
+    </Grid>
+</Window>

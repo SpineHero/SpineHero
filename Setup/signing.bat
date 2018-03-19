@@ -1,0 +1,3 @@
+"c:\Program Files (x86)\Windows Kits\10\bin\10.0.16299.0\x64\signtool.exe" sign /f SH-codecert.pfx /t http://timestamp.comodoca.com/authenticode /p SpineHero16 Output/SetupSpineHero-1.3.0.0.exe
+
+"c:\Program Files (x86)\Windows Kits\10\bin\10.0.16299.0\x64\signtool.exe" sign /f SH-codecert.pfx /as /fd sha256 /tr http://timestamp.comodoca.com/rfc3161 /td sha256 /p SpineHero16 Output/SetupSpineHero-1.3.0.0.exe

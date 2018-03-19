@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SpineHero.Monitoring.Properties" GeneratedClassName="Const">
+  <Profiles />
+  <Settings>
+    <Setting Name="CorrectLimit" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">70</Value>
+    </Setting>
+    <Setting Name="WarningLimit" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">40</Value>
+    </Setting>
+    <Setting Name="MinDistance" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">280</Value>
+    </Setting>
+    <Setting Name="MMPerByte" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="IWFileExtension" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.shi</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

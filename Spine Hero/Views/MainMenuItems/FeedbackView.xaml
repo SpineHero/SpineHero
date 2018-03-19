@@ -1,0 +1,21 @@
+﻿<UserControl ResxExtension.DefaultResxName="SpineHero.Views.MainMenuItems.FeedbackView" Language="{UICulture}"
+      x:Class="SpineHero.Views.MainMenuItems.FeedbackView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SpineHero.Views.MainMenuItems"
+      mc:Ignorable="d" 
+      Background="{StaticResource BackgroundBrush}"
+      d:DesignHeight="400" d:DesignWidth="500"
+      >
+
+    <DockPanel Margin="15,20,15,0">
+        <DockPanel Dock="Bottom" LastChildFill="False">
+            <Button DockPanel.Dock="Right" x:Name="Send" Content="{Binding SendBtnText, Mode=OneWay}" Margin="0,15" />
+        </DockPanel>
+        <DockPanel Dock="Top">
+            <TextBox x:Name="FeedbackText"  AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+        </DockPanel>
+    </DockPanel>
+</UserControl>

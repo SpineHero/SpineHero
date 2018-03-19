@@ -1,0 +1,17 @@
+﻿<UserControl ResxExtension.DefaultResxName="SpineHero.Views.Controls.Translation" Language="{UICulture}"
+             x:Class="SpineHero.Views.Controls.DateRangeBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SpineHero.Views.Controls"
+             xmlns:stats="clr-namespace:SpineHero.Model.Statistics" 
+             mc:Ignorable="d" 
+             d:DesignHeight="46.797" d:DesignWidth="408.769">
+    <StackPanel Orientation="Horizontal">
+        <Button x:Name="DayButton" Click="ChangeCurrentRange" Tag="{x:Static stats:DateRange.Day}" BorderThickness="2,2,0,2" Content="{Resx Day}" />
+        <Button x:Name="WeekButton" Click="ChangeCurrentRange" Tag="{x:Static stats:DateRange.Week}" BorderThickness="2,2,0,2" Content="{Resx Week}" />
+        <Button x:Name="MonthButton" Click="ChangeCurrentRange" Tag="{x:Static stats:DateRange.Month}" BorderThickness="2,2,0,2" Content="{Resx Month}" />
+        <Button x:Name="YearButton" Click="ChangeCurrentRange" Tag="{x:Static stats:DateRange.Year}" Content="{Resx Year}" />
+    </StackPanel>
+</UserControl>

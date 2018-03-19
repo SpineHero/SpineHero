@@ -1,0 +1,77 @@
+﻿<Window ResxExtension.DefaultResxName="SpineHero.Views.Notifications.Notification" Language="{UICulture}"
+        x:Class="SpineHero.Views.Notifications.PopupNotificationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpineHero.Views.Notifications"
+        Style="{StaticResource WindowStyle}"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        ShowActivated="False"
+        Topmost="True"
+        Background="Transparent"
+        Opacity="0.9"
+        Left="{Binding PositionLeft}"
+        Top="{Binding PositionTop, Mode=TwoWay}"
+        Title="Spine Hero - You can do it better" Height="70" Width="200">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard >
+                    <DoubleAnimation Duration="0:0:.5" Storyboard.TargetProperty="Opacity" From="0" To="0.9"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+
+        <EventTrigger RoutedEvent="Window.MouseEnter">
+            <BeginStoryboard>
+                <Storyboard >
+                    <DoubleAnimation Duration="0:0:.2" Storyboard.TargetProperty="Opacity" From="0.9" To="1"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+
+        <EventTrigger RoutedEvent="Window.MouseLeave">
+            <BeginStoryboard>
+                <Storyboard >
+                    <DoubleAnimation Duration="0:0:.2" Storyboard.TargetProperty="Opacity" From="1" To="0.9"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <Border BorderBrush="{StaticResource DarkBaseBrush}"
+	        BorderThickness="0"
+	        Background="{StaticResource BackgroundBrush}">
+        <DockPanel>
+            <DockPanel DockPanel.Dock="Top" LastChildFill="False" Background="{StaticResource BaseBrush}">
+                <Button DockPanel.Dock="Right" Margin="3" x:Name="FadeOutAndCloseWindow">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Width="12" Height="12" Source="pack://application:,,,/Resources/Images/Buttons/CloseWindowIcon.png" />
+                            </StackPanel>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </DockPanel>
+
+            <Grid DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0">
+                    <Image Width="50" Height="50" Margin="5 0 0 0" Source="{Binding CurrentPostureImagePath}" />
+                </StackPanel>
+                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                    <TextBlock HorizontalAlignment="Center" Text="{Resx WrongPostureShort}"/>
+                    <TextBlock HorizontalAlignment="Center" FontSize="14" Text="{Resx Motivation}" />
+                </StackPanel>
+            </Grid>
+        </DockPanel>
+    </Border>
+</Window>

@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpineHero.App" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.AppBootstrapper" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAQAAAAAAAAAAAAAAABAABIABAAQAAAAAAAAACAAAAA=</HashCode>
+      <FileName>AppBootstrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.DataSources.AbstractDataSource" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAIAAAAAAAAAAAAAAAABAIIAAAACAAAAA=</HashCode>
+      <FileName>DataSources\AbstractDataSource.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.DataSources.DataSourceManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAagAAAAIACAAAAAAAABAIAAAACCAAAAA=</HashCode>
+      <FileName>DataSources\DataSourceManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.DataSources.FindByCascade" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAIAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataSources\ImageProcessing\FindByCascade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.DataSources.HeadFinder" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAgAAAAAAAIAAAAA=</HashCode>
+      <FileName>DataSources\ImageProcessing\HeadFinder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.DataSources.ImageUtils" Collapsed="true">
+    <Position X="17.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAIAAAAAIAIAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>DataSources\ImageUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.DataSources.ImageWrapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIEgIAAgCAAIIAAAAQAAAAEAAAAAACABAAAAEQQAAI=</HashCode>
+      <FileName>DataSources\ImageWrapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.DataSources.SerializedImages" Collapsed="true">
+    <Position X="15.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAABAAAAgAAAAgAAAAAA=</HashCode>
+      <FileName>DataSources\ImageWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.DataSources.ImageConstants" Collapsed="true">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataSources\ImageWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.DataSources.IntelF200DataSource" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAEAAAAAAEAAAAAAAAAAAAAIAAAACAAAAA=</HashCode>
+      <FileName>DataSources\IntelF200DataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.DataSources.Senz3DDataSource" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAgQAAAAAAAAAIAAAAAAAICAAACAAAAA=</HashCode>
+      <FileName>DataSources\Senz3DDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.DataSources.TestDataSource" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAA=</HashCode>
+      <FileName>DataSources\TestDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.DataSources.WebCameraDataSource" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAAEAAAAAAAAAEAAAICAAACAACAA=</HashCode>
+      <FileName>DataSources\WebCameraDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Caliburn.Micro.KeyBinding.Input.KeySequence" Collapsed="true">
+    <Position X="20.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAAAECAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Input\KeySequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Caliburn.Micro.KeyBinding.Input.KeyTrigger" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAEAFAAAAAQAAAAAAAEAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Input\KeyTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Caliburn.Micro.KeyBinding.Input.MultiKeyBinding" Collapsed="true">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAEAAAEAAAAAA=</HashCode>
+      <FileName>Input\MultiKeyBinding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Caliburn.Micro.KeyBinding.Input.MultiKeyGesture" Collapsed="true">
+    <Position X="17.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAgAAAAAAAgBAAAAAAAAQAAAAQAAAwEAAAAAACAJA=</HashCode>
+      <FileName>Input\MultiKeyGesture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Caliburn.Micro.KeyBinding.Input.MultiKeyGestureConverter" Collapsed="true">
+    <Position X="19" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAQAAAQAAABAAAAAAAAAAAAAACAAAAEAAAAAAAA=</HashCode>
+      <FileName>Input\MultiKeyGestureConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.Model.AutoStartup" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAgAAA=</HashCode>
+      <FileName>Model\AutoStartup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.Model.CalibrationManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAABAAAAAIAAQAAAAAAAQA=</HashCode>
+      <FileName>Model\CalibrationManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.Model.Graphs.RecentSittingQuality" Collapsed="true">
+    <Position X="20.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAwBAAQABAAAAAAAAAAAAAAAAAIEAAAAAAgQAA=</HashCode>
+      <FileName>Model\Graphs\RecentSittingQuality.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.Model.Notifications.Notification" Collapsed="true">
+    <Position X="6.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAQAAAAAAA=</HashCode>
+      <FileName>Model\Notifications\Notification.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.Model.Notifications.NotificationAreaNotification.NotificationAreaNotification" Collapsed="true">
+    <Position X="5.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAEAAQBAAAAAAAACAAAIgAAIgAICSgAAgAAAAQA=</HashCode>
+      <FileName>Model\Notifications\NotificationAreaNotification\NotificationAreaNotification.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.Model.Notifications.PopupNotification.PopupNotification" Collapsed="true">
+    <Position X="7.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAEAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Notifications\PopupNotification\PopupNotification.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.Model.Statistics.StatisticsModule" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAIAQAAAgAAAAAAAAAAAAQAAAIIBQAAAABAAAA=</HashCode>
+      <FileName>Model\Statistics\StatisticsModule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.AverageResultMessageProcessor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>PostureMonitoring\AverageResultMessageProcessor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.SittingQualityLevelHelper" Collapsed="true">
+    <Position X="12" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PostureMonitoring\ResultMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.PostureHelper" Collapsed="true">
+    <Position X="15.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PostureMonitoring\ResultMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Evaluation" Collapsed="true">
+    <Position X="20.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgBAAgAAAAAAAAIAAAAAAAAAAIAA=</HashCode>
+      <FileName>PostureMonitoring\ResultMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.ResultMessage" Collapsed="true">
+    <Position X="13.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAjCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>PostureMonitoring\ResultMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Managers.ColorAndDepthWatcherManager" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>PostureMonitoring\Managers\ColorAndDepthWatcherManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Managers.ColorOrDepthWatcherManager" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>PostureMonitoring\Managers\ColorOrDepthWatcherManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Managers.PostureMonitoringStatusChange" Collapsed="true">
+    <Position X="19" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PostureMonitoring\Managers\IPostureMonitoringManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Managers.PostureMonitoringManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAEAAIQCAAACACAAAAAAAAAAAAQAAQAAAACA=</HashCode>
+      <FileName>PostureMonitoring\Managers\PostureMonitoringManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Managers.WatcherManager" Collapsed="true">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAgAAAAQAAAAoAAAAAAAAAAQA=</HashCode>
+      <FileName>PostureMonitoring\Managers\WatcherManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Watchers.CalibrationDependentWatcher" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAIAAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\CalibrationDependentWatcher.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Watchers.DepthWatcher.BadPosture" Collapsed="true">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgSAAAAAAAAAAABAAAAQAAAAAAAAAAAggAAAAQAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\DepthWatcher\BadPosture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Watchers.DepthWatcher.BodyPoints" Collapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQBAAAIAAgAAAIgAAACAAAAAAQAACAEAAAAIAABAgAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\DepthWatcher\BodyPoints.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Watchers.DepthWatcher.DepthImagePostureAnalyzer" Collapsed="true">
+    <Position X="19" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKEAAAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\DepthWatcher\DepthImagePostureAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Watchers.DepthWatcher.DepthWatcher" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAIUAAAAAIAAAIAAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\DepthWatcher\DepthWatcher.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.PostureMonitoring.Watchers.HeadWatcher.HeadWatcher" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAoAAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\HeadWatcher\HeadWatcher.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpineHero.Properties.Const" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAABAAAAAIAABAAAJAAAAAgAAAAgAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.Properties.Resources" Collapsed="true">
+    <Position X="12" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.Properties.Settings" Collapsed="true">
+    <Position X="17.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAIABAAAABAAAAAAEAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SittingHamsters.SpineHero.Resources.ResourceHelper" Collapsed="true">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAACAAAAAAAAAAEIAAEEAAAAABAAAIAA=</HashCode>
+      <FileName>Resources\ResourceHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.Utils.Aspects.LogMethodCall" Collapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAACAAAAAAQAAAAAAEAAgAAACA=</HashCode>
+      <FileName>Utils\Aspects\LogMethodCall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.Utils.EventLoggerManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\EventLoggerManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.Utils.LogHelper" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\LogHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.Utils.NLogLogger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAAAAAAAAAAAAACAAEAAAAAAEAAAAA=</HashCode>
+      <FileName>Utils\NLogLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.ViewModels.DialogWindows.CalibrationWindowViewModel" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAMAAAAIQAAAAMAAAgCAAgMgAIIiYAIQIAQQAQ=</HashCode>
+      <FileName>ViewModels\DialogWindows\CalibrationWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.ViewModels.DialogWindows.VisualizationImagesViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAABIAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\DialogWindows\VisualizationImagesViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.ViewModels.ShellViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAAIAAAIIwQAIgIAAQgIAAABAAAAoAAQAAiABCACA=</HashCode>
+      <FileName>ViewModels\ShellViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.ViewModels.MainMenuItems.DashboardViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAgACAAAgAAKMAACgAgAAAAAAMAAQAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MainMenuItems\DashboardViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.ViewModels.MainMenuItems.SettingsViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAIAAAAAgAAAACAAAAAIAAAAAAwAAAAAAQAQ=</HashCode>
+      <FileName>ViewModels\MainMenuItems\SettingsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.ViewModels.MainMenuItems.StatisticsViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MainMenuItems\StatisticsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.ViewModels.Notifications.NotificationAreaIconViewModel" Collapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAEQAAAAAAAACgAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Notifications\NotificationAreaIconViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpineHero.Views.DialogWindows.CalibrationWindowView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\DialogWindows\CalibrationWindowView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.Views.Notifications.PopupNotification" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Notifications\PopupNotification.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.Views.ShellView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ShellView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpineHero.Views.ValueConverters.PercentToDegreesConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ValueConverters\PercentToDegreesConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Struct Name="SpineHero.PostureMonitoring.Watchers.DepthWatcher.PointValue" Collapsed="true">
+    <Position X="10.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAggAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\DepthWatcher\BodyPoints.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="SpineHero.DataSources.IDataSource" Collapsed="true">
+    <Position X="10.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAABAIIAAAACAAAAA=</HashCode>
+      <FileName>DataSources\IDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.DataSources.IDataSourceManager" Collapsed="true">
+    <Position X="12" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAASgAAAAAAAAAAAAAAABAIAAAAACAAAAA=</HashCode>
+      <FileName>DataSources\IDataSourceManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.Model.Notifications.INotification" Collapsed="true">
+    <Position X="1.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAQAAAAAAA=</HashCode>
+      <FileName>Model\Notifications\INotification.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.Model.Notifications.NotificationAreaNotification.INotificationAreaNotification" Collapsed="true">
+    <Position X="2.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAACgAAAAAAAAA=</HashCode>
+      <FileName>Model\Notifications\NotificationAreaNotification\INotificationAreaNotification.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.Model.Notifications.PopupNotification.IPopupNotification" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Notifications\PopupNotification\IPopupNotification.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.PostureMonitoring.IResultMessageProcessor" Collapsed="true">
+    <Position X="19" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>PostureMonitoring\IResultMessageProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.PostureMonitoring.Managers.IPostureMonitoringManager" Collapsed="true">
+    <Position X="17.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAQAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PostureMonitoring\Managers\IPostureMonitoringManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.PostureMonitoring.Managers.IWatcherManager" Collapsed="true">
+    <Position X="10.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>PostureMonitoring\Managers\IWatcherManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.PostureMonitoring.Watchers.IWatcher" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\IWatcher.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.PostureMonitoring.Watchers.IColorImageWatcher" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\IWatcher.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.PostureMonitoring.Watchers.IDepthImageWatcher" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PostureMonitoring\Watchers\IWatcher.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.Utils.ILogger" Collapsed="true">
+    <Position X="13.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\ILogger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.ViewModels.IShell" Collapsed="true">
+    <Position X="20.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\IShell.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpineHero.ViewModels.MainMenuItems.IMainMenuItem" Collapsed="true">
+    <Position X="15.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MainMenuItems\IMainMenuItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SpineHero.PostureMonitoring.SittingQualityLevel" Collapsed="true">
+    <Position X="12" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>PostureMonitoring\ResultMessage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SpineHero.PostureMonitoring.Posture" Collapsed="true">
+    <Position X="10.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAQAgQAAQAAAAAAAAgAAAAIABA=</HashCode>
+      <FileName>PostureMonitoring\ResultMessage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
