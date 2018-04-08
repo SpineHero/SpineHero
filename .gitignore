@@ -218,3 +218,8 @@ _Pvt_Extensions;
 # Jetbrains files
 .idea/
 .idea.*/
+
+# Installer files
+Setup/spinehero.iss
+Setup/SH-codecert.pfx
+Setup/Output/
